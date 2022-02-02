@@ -16,4 +16,4 @@ window.geometry("+{}+{}".format(posRight, posDown))
 
 window.mainloop()
 
-#link til tkinter brug https://www.foxinfotech.in/2018/09/how-to-create-window-in-python-using-tkinter.html
+
