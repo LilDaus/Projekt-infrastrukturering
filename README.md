@@ -11,7 +11,8 @@ vores synopsis viad [docs](https://docs.google.com/document/d/11HQmjYZEANnnKT7QO
 
 
 ![UML](BILLEDER/UML.JPG)
+dette er en af vores første GUI skitser
 ![GUI](BILLEDER/GUI.jpg)
-
+her er scrum modellen som vi kommer vi bruger til infrastrukurerings metode![SCUM](BILLEDER/scrum.png)
 
 
