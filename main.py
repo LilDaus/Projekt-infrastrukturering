@@ -1,19 +1,55 @@
-#from sympy imort *
-import numpy as np
 from tkinter import *
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg,
+NavigationToolbar2Tk)
 
+
+# plot function is created for
+# plotting the graph in
+# tkinter window
+def plot():
+
+	# the figure that will contain the plot
+	fig = Figure(figsize = (5, 5),dpi = 100)
+
+	# list of squares
+	y = [i**2 for i in range(10)]
+
+	# subplot tilføjes
+	plot1 = fig.add_subplot(111)
+
+	# plot grafen
+	plot1.plot(y)
+
+# creating the Tkinter canvas
+# containing the Matplotlib figure
+	canvas = FigureCanvasTkAgg(fig,master = window)
+	canvas.draw()
+
+	# placing the canvas on the Tkinter window
+	canvas.get_tk_widget().pack()
+
+	# Matplotlib toolbar
+	toolbar = NavigationToolbar2Tk(canvas,window)
+	toolbar.update()
+
+	#  toolbar i Tkinter window
+	canvas.get_tk_widget().pack()
+
+# the main Tkinter window
 window = Tk()
+# vindue størrelsen
+window.geometry("700x700")
 
-window.title("udregner")
-window.configure(width=500, height=300)
-window.configure(bg='lightgray')
+# her vætter vi titlen
+window.title('udregner')
 
-winWidth = window.winfo_reqwidth()
-winwHeight = window.winfo_reqheight()
-posRight = int(window.winfo_screenwidth() / 2 - winWidth / 2)
-posDown = int(window.winfo_screenheight() / 2 - winwHeight / 2)
-window.geometry("+{}+{}".format(posRight, posDown))
+
+# den knap som man kan trykke på
+plot_button = Button(master = window,command = plot,height = 3,width = 11,text = "Plot")
+
+# place the button
+# in main window
+plot_button.pack()
 
 window.mainloop()
-
-
