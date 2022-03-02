@@ -19,7 +19,6 @@ vores synopsis via [docs](https://docs.google.com/document/d/11HQmjYZEANnnKT7QOx
 dette er en af vores første GUI skitser
 ![GUI](BILLEDER/GUI.jpg)
 her er scrum modellen som vi kommer vi bruger til infrastrukurerings metode![SCUM](BILLEDER/scrum.png)
-![Flowchart](6969.JPG)
-Her er vores flowchart
-
+![1#flowchart](BILLEDER/flowchart.png)
+dette er vores første flowchart det er måske lidt tørt men vi skulle jo starte et sted
 

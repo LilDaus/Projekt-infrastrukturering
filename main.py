@@ -1,55 +1,22 @@
-from tkinter import *
-from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg,
-NavigationToolbar2Tk)
+import tkinter as tk
+
+root = tk.Tk()
+
+canvas1 = tk.Canvas(root, width=400, height=300)
+canvas1.pack()
+
+entry1 = tk.Entry(root)
+canvas1.create_window(200, 140, window=entry1)
 
 
-# plot function is created for
-# plotting the graph in
-# tkinter window
-def plot():
+def getSquareRoot():
+    x1 = entry1.get()
 
-	# the figure that will contain the plot
-	fig = Figure(figsize = (5, 5),dpi = 100)
-
-	# list of squares
-	y = [i**2 for i in range(10)]
-
-	# subplot tilføjes
-	plot1 = fig.add_subplot(111)
-
-	# plot grafen
-	plot1.plot(y)
-
-# creating the Tkinter canvas
-# containing the Matplotlib figure
-	canvas = FigureCanvasTkAgg(fig,master = window)
-	canvas.draw()
-
-	# placing the canvas on the Tkinter window
-	canvas.get_tk_widget().pack()
-
-	# Matplotlib toolbar
-	toolbar = NavigationToolbar2Tk(canvas,window)
-	toolbar.update()
-
-	#  toolbar i Tkinter window
-	canvas.get_tk_widget().pack()
-
-# the main Tkinter window
-window = Tk()
-# vindue størrelsen
-window.geometry("700x700")
-
-# her vætter vi titlen
-window.title('udregner')
+    label1 = tk.Label(root, text=float(x1) ** 0.5)
+    canvas1.create_window(200, 230, window=label1)
 
 
-# den knap som man kan trykke på
-plot_button = Button(master = window,command = plot,height = 3,width = 11,text = "Plot")
+button1 = tk.Button(text='Get the Square Root', command=getSquareRoot)
+canvas1.create_window(200, 180, window=button1)
 
-# place the button
-# in main window
-plot_button.pack()
-
-window.mainloop()
+root.mainloop()
