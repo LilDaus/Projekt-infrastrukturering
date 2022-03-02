@@ -18,7 +18,11 @@ vores synopsis via [docs](https://docs.google.com/document/d/11HQmjYZEANnnKT7QOx
 ![UML](BILLEDER/UML.JPG)
 dette er en af vores første GUI skitser
 ![GUI](BILLEDER/GUI.jpg)
-her er scrum modellen som vi kommer vi bruger til infrastrukurerings metode![SCUM](BILLEDER/scrum.png)
-![1#flowchart](BILLEDER/flowchart.png)
+her er scrum modellen som vi kommer vi bruger til infrastrukurerings metode. 
+check punkterne for scrum i [trello](https://trello.com/invite/b/JtIuVgjM/ae43df11d05710eb05ca86b42af3164e/projekt) 
+![SCUM](BILLEDER/scrum.png)
 dette er vores første flowchart det er måske lidt tørt men vi skulle jo starte et sted
+![1#flowchart](BILLEDER/flowchart.png)
+her er det andet flowchart at det forventede endelige produkt som vi vil opnå.
+![2#flowchart](BILLEDER/flowchart2.png)
 
