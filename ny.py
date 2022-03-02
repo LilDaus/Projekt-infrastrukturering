@@ -12,13 +12,13 @@ from sympy.parsing.sympy_parser import parse_expr
 window = Tk()
 # vindue størrelsen
 window.geometry("700x700")
-
 # her vætter vi titlen
 window.title('udregner')
 
-
+#her giver vi vores figur den størrlse som den skal være på skærmen
 figure = Figure(figsize=(5, 5), dpi=100)
 plot = figure.add_subplot(1, 1, 1)
+
 
 def getFunctionFromString(inputString='y= x**2'):
 
@@ -42,7 +42,7 @@ f = getFunctionFromString(brugerens_input)
 X = np.arange(0,100,0.1)
 Y = f(X)
 
-plot.plot(X, Y, color="red")	# Plotting points
+plot.plot(X, Y, color="red")
 
 canvas = FigureCanvasTkAgg(figure, window)
 canvas.get_tk_widget().grid(row=0, column=0)

@@ -25,4 +25,3 @@ dette er vores første flowchart det er måske lidt tørt men vi skulle jo start
 ![1#flowchart](BILLEDER/flowchart.png)
 her er det andet flowchart at det forventede endelige produkt som vi vil opnå.
 ![2#flowchart](BILLEDER/flowchart2.png)
-
